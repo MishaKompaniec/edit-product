@@ -308,4 +308,36 @@ body {
       }
     }
   }
+
+  &__btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 15px 30px 30px 30px;
+  }
+
+  &__default-btn {
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 1px solid #8184af;
+    background: #ffffff;
+    color: #8184af;
+    cursor: pointer;
+  }
+
+  &__primary-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #8184af;
+    color: #ffffff;
+    cursor: pointer;
+  }
 }
