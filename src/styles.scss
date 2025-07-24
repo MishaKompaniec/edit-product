@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+
+.edit-product {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+
+    &__title {
+      margin: 0;
+      font-size: 25px;
+      font-weight: 700;
+      color: #525369;
+    }
+
+    &__buttons-group {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .header__edit-btn {
+        cursor: pointer;
+        width: 90px;
+        height: 40px;
+        transition: filter 0.3s ease;
+
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+
+      .header__line {
+        display: inline-block;
+        width: 1px;
+        height: 40px;
+        background-color: #d9dae7;
+      }
+
+      .header__controls {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        img {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+        }
+
+        .header__arrows {
+          display: flex;
+
+          .header__arrow {
+            &--rotated {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
